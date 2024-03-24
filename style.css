@@ -1,0 +1,19 @@
+<title>Age Calculator</title>
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .crossed {
+    background-color: red;
+    color: white;
+  }
+</style>
+

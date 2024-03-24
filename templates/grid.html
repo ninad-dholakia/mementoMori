@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block body %}
+<br>
+<p>This is the GRID </p>
+ {{years}} and {{age}}
+<div id="radio-buttons"></div>
+
+<script type="text/javascript">
+  const age = {{age}}
+  const width = {{width}};
+  const gridlength = {{years}}/width;
+  console.log(gridlength);
+  var count = 0
+  
+  //Container element where rbs will be appended
+  const container = document.getElementById('radio-buttons');
+
+  //Vertical print loop
+  for (let j = 1; j <= gridlength; j++){
+    //Horizontal print loop
+    for (let i = 1; i <= width; i++) {
+      // New rb element
+      const radioButton = document.createElement('input');
+      radioButton.type = 'radio';
+      // Set the name attribute to group the rba
+      radioButton.name = 'options';
+      // Set a unique id for each rb
+      radioButton.id = 'option' + i;
+      // Set a value for the rb
+      radioButton.value = 'option' + i;
+      if count<=age:
+        radioButton.class=
+      container.appendChild(radioButton);
+    }
+    container.appendChild(document.createElement('br'));
+  }
+</script>
+{% endblock %}

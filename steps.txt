@@ -1,0 +1,4 @@
+implement a simple show me grid webapp
+user registration and login
+Email reminder optionality - choose at the time of registration
+convert to PWA for browser
